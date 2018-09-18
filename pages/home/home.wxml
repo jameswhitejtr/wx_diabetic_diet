@@ -1,0 +1,56 @@
+<!--pages/home/home.wxml-->
+<!--商城首页-->
+<swiper class="home-swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator>
+        <image src="{{item}}" class="slide-image" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="special-choose">
+  <view class="special-item">
+    <navigator url="../home/breakfast/breakfast">
+      <!--<text class="icon star"></text>-->
+      <image class="icon star" src='../images/breakfast_01.jpg'> </image>
+      <text class="title">早餐</text>
+    </navigator>
+  </view>
+  <view class="special-item">
+    <navigator url="../home/lunch/lunch">
+      <!--<text class="icon lunch"></text>-->
+       <image class="icon lunch" src='../images/lunch_01.jpg'> </image>
+      <text class="title">午餐</text>
+    </navigator>
+  </view>
+  <view class="special-item">
+    <navigator url="../home/dinner/dinner">
+      <!--<text class="icon dinner"></text>-->
+       <image class="icon dinner" src='../images/dinner_01.jpg'> </image>
+      <text class="title">晚餐</text>
+    </navigator>
+  </view>
+  <view class="special-item">
+    <navigator url="../home/extra_meal/extra_meal">
+      <!--<text class="icon extra_meal"></text>-->
+       <image class="icon extra_meal" src='../images/extra_meal_01.jpg'> </image>
+      <text class="title">加餐</text>
+    </navigator>
+  </view>
+</view>
+<view class="search-box">
+  <navigator url="../goods/search">
+    <icon type="search" size="16"></icon>
+    <text class="title">Search</text>
+  </navigator>
+</view>
+
+<view class="top-cate">
+  <block wx:for="{{topPicData}}">
+    <navigator class="cate-item">
+      <image src="{{item.pic}}" mode="aspectFit"></image>
+    </navigator>
+  </block>
+</view>
+===
