@@ -21,7 +21,7 @@
     <navigator url="../home/lunch/lunch">
       <!--<text class="icon lunch"></text>-->
        <image class="icon lunch" src='../images/lunch_01.jpg'> </image>
-      <text class="title">午餐</text>
+      <text class="title">午餐111</text>
     </navigator>
   </view>
   <view class="special-item">
