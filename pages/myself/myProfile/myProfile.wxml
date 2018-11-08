@@ -1,0 +1,59 @@
+<view class="dispalyFlex container">
+    <view class="dispalyFlex view1" style="flex-item">
+        <image class="moneyImge" src="{{userInfo.avatarUrl}}"></image>
+        <!-- <label class="font-size14 balance magrgin-top10">钱包余额</label> -->
+        <view class="dispalyFlex balanceShow">
+            <label class="balanceValue magrgin-top10">{{ balance }}</label>
+            <label class="font-size14 yuan"></label>
+        </view>
+    </view>
+    <view class="view2 magrgin-top10" style="flex-item">
+       <view class="height44">
+            <label class="font-size12 floatLeft margin-left12 normalColor">用户名</label>
+            <input  class="font-size14 normalColor floatRight margin-right12 magrgin-top10" placeholder-style="color:#ccc;" type="number" placeholder="{{userInfo.nickName}}"/>
+        </view>
+        <label class="floatLeft lineSpace"></label>
+        <view class="height44">
+            <label class="font-size12 floatLeft margin-left12 normalColor">性别</label>
+            <input  class="font-size14 normalColor floatRight margin-right12 magrgin-top10" placeholder-style="color:#ccc;" type="number" placeholder="男"/>
+        </view>
+        <label class="floatLeft lineSpace"></label>
+        <view class="height44">
+            <label class="font-size12 floatLeft margin-left12 normalColor">身高</label>
+            <label class="font-size12 floatRight margin-right12 normalColor">cm</label>
+            <input  class="font-size14 normalColor floatRight margin-right12 magrgin-top10" placeholder-style="color:#ccc;" type="number" placeholder="180"/>
+        </view>
+        <label class="floatLeft lineSpace"></label>
+        <view class="height44">
+            <label class="font-size12 floatLeft margin-left12 normalColor">体重</label>
+            <label class="font-size12 floatRight margin-right12 normalColor">kg</label>
+            <input  class="font-size14 normalColor floatRight margin-right12 magrgin-top10" placeholder-style="color:#ccc;" type="number" placeholder="75"/>
+        </view>
+        <label class="floatLeft lineSpace"></label>
+        <view class="height44">
+             <label class="font-size12 floatLeft margin-left12 normalColor"> 出生年月日: </label>
+               <picker mode="date" value="{{date}}" start="1899-01-01" end="2099-12-31" bindchange="bindDateChange">
+                    <view class="font-size12 floatRight margin-right12 normalColor">
+                     {{date}}
+                    </view>
+                </picker>
+        </view>
+         <label class="floatLeft lineSpace"></label>
+        <view class="height44">
+             <label class="font-size12 floatLeft margin-left12 normalColor"> 地址: </label>
+              <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                     <view class="font-size12 floatRight margin-right12 normalColor">
+                      {{region[0]}}，{{region[1]}}，{{region[2]}}
+                      </view>
+             </picker>
+        </view>
+        <label class="floatLeft lineSpace"></label>
+        <view class="height44">
+            <checkbox class="font-size14 normalColor floatRight margin-right12 magrgin-top10" checked='checked'>是否身孕</checkbox> 
+        </view>
+    </view>
+    <view class="view3" style="flex-item">
+        <button class="depositBtn" type="primary" form-type="submit">修改</button>
+      <!--  <button class="showDeatailBtn magrgin-top10 normalColor" form-type="submit">查看明细</button> -->
+    </view>
+</view>

@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/home/home",
+    "pages/home/breakfast/breakfast",
+    "pages/home/lunch/lunch",
+    "pages/home/dinner/dinner",
+    "pages/home/extra_meal/extra_meal",
+    "pages/moneyManage/moneyManage",
+    "pages/myself/myself",
+    "pages/myself/myProfile/myProfile",
+    "pages/myself/myProfile/myProfileDeatail/myProfileDeatail",
+    "pages/myself/modifyPassword/modifyPassword",
+    "pages/myself/directionsForUse/directionsForUse",
+    "pages/myself/feedBack/feedBack",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#35495D",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#09BB07",
+    "backgroundColor": "",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/images/order.png",
+        "selectedIconPath": "pages/images/order_r.png"
+      },
+      {
+        "pagePath": "pages/moneyManage/moneyManage",
+        "text": "财务管理",
+        "iconPath": "pages/images/money.png",
+        "selectedIconPath": "pages/images/money_r.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我",
+        "iconPath": "pages/images/people.png",
+        "selectedIconPath": "pages/images/people_r.png"
+      }
+      ]
+  },
+   "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
